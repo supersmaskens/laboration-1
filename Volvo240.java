@@ -50,12 +50,25 @@ public class Volvo240 extends Car implements Movable{
     public double speedFactor(){
         return enginePower * 0.01 * trimFactor;
     }
+
+    /**
+     * Gives the current X position.
+     * @return Current X position.
+     */
     public double getX() {
         return xPosition;
     }
+    /**
+     * Gives the current Y position.
+     * @return Current Y position.
+     */
     public double getY() {
         return yPosition;
     }
+    /**
+     * Gives the current direction.
+     * @return Current direction.
+     */
     public double getDirection() {
         return direction;
     }
