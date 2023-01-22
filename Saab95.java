@@ -27,6 +27,9 @@ public class Saab95 extends Car implements Movable{
         return enginePower * 0.01 * turbo;
     }
 
+    public boolean isTurboOn() {
+        return turboOn;
     }
+}
 
 

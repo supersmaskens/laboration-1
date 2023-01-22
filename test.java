@@ -51,4 +51,22 @@ public class test {
         car.move();
         assert(car.getX() == car.speedFactor() && car.getY() == 0);
     }
+    @Test
+    public void saabTurboMoveTest(){
+        Saab95 car = new Saab95();
+        car.setTurboOn();
+        car.gas(1);
+        car.move();
+        assert(car.getX() == car.speedFactor());
+    }
+
+    @Test
+    public void saabTurnOffTurboTest(){
+        Saab95 car = new Saab95();
+        car.setTurboOn();
+        car.setTurboOff();
+        assert(!car.isTurboOn());
+    }
+
+
 }
