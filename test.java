@@ -1,5 +1,31 @@
 import org.junit.Test;
+import java.awt.*;
+
 public class test {
+    @Test
+    public void carModelName() {
+        Volvo240 car = new Volvo240();
+        assert(car.getModelName().equals("Volvo240"));
+    }
+    @Test
+    public void carColor(){
+        Volvo240 car = new Volvo240();
+        car.setColor(Color.red);
+        assert(car.getColor() == Color.red);
+    }
+    @Test
+    public void engineStart() {
+        Volvo240 car = new Volvo240();
+        car.startEngine();
+        assert(car.getCurrentSpeed() == 0.1);
+    }
+    @Test
+    public void engineStop() {
+        Volvo240 car = new Volvo240();
+        car.startEngine();
+        car.stopEngine();
+        assert(car.getCurrentSpeed() == 0);
+    }
     @Test
     public void defaultVolvoTest(){
         Volvo240 car = new Volvo240();

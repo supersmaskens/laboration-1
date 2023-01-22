@@ -29,7 +29,7 @@ public abstract class Car implements Movable{
     /**
      * The current speed of the car.
      */
-    double currentSpeed;
+    private double currentSpeed;
     /**
      * Color of the car.
      */
