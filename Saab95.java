@@ -10,10 +10,7 @@ public class Saab95 extends Car implements Movable{
     private double direction;
 
     public Saab95(double xPosition, double yPosition, double direction){
-        super(2, Color.red, 125, "Saab95");
-        this.xPosition = xPosition;
-        this.yPosition = yPosition;
-        this.direction = direction;
+        super(2, Color.red, 125, "Saab95", xPosition, yPosition, direction);
 	    turboOn = false;
         stopEngine();
     }
