@@ -6,7 +6,7 @@ public class Saab95 extends Car{
     /**
      * Boolean that affects the speed factor of the car.
      */
-    public boolean turboOn;
+    private boolean turboOn;
 
     /**
      * Constructor with parameters for initial position/direction.
